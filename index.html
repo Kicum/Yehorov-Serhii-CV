@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Serhii Yehorov - CV</title>
   </head>
   <body>
     <div class="container">
       <header>
         <hr size="5" color="#000" width="30%" align="left" />
-        <h1>Serhii Yehorov</h1>
-        <h3><a href="./hire-me.html">Hire me</a> <br /></h3>
+        <h1 class="name">Serhii Yehorov</h1>
+        <h3><a class="link" href="./hire-me.html">Hire me</a> <br /></h3>
 
         <img height="400" src="./img/my_photo.jpg" alt="Serhii Yehorov photo" />
       </header>
       <main>
-        <h3>Junior Frontend Developer</h3>
+        <p class="position">Junior Frontend Developer</p>
 
         <article>
           <h4>About me</h4>
@@ -37,8 +38,8 @@
           <table border="1" cellspacing="0" cellpadding="10px">
             <thead>
               <tr>
-                <th>Period</th>
-                <th>Position</th>
+                <th class="uppercase">Period</th>
+                <th class="uppercase">Position</th>
               </tr>
             </thead>
 
@@ -48,6 +49,7 @@
                 <td>
                   Frontend Learner at
                   <a
+                    class="link"
                     href="https://robotdreams.cc/uk/course/it-generation"
                     target="_blank"
                   >
@@ -58,7 +60,7 @@
 
               <tr>
                 <td rowspan="2">
-                  <strong>Description</strong>
+                  <p class="uppercase">Description</p>
                 </td>
                 <td>Study HTML, CSS, JavaScript,</td>
               </tr>
@@ -71,7 +73,7 @@
                 <td>Nov 2019 — May 2022</td>
                 <td>
                   Lead Sales Manager at
-                  <a href="https://vagar.com.ua/" target="_blank">
+                  <a class="link" href="https://vagar.com.ua/" target="_blank">
                     LLC ODESSA WEIGHING FACTORY VAGAR
                   </a>
                 </td>
@@ -79,7 +81,7 @@
 
               <tr>
                 <td rowspan="3">
-                  <strong>Description</strong>
+                  <p class="uppercase">Description</p>
                 </td>
                 <td>
                   I was in charge of providing communication with large mash
@@ -100,7 +102,7 @@
 
         <article>
           <h2>Skills:</h2>
-          <ul>
+          <ul class="square-type-list">
             <li>CSS</li>
             <li>HTML/HTML5</li>
             <li>JavaScript</li>
