@@ -10,18 +10,23 @@
   <body>
     <div class="container">
       <header>
-        <hr size="5" color="#000" width="30%" align="left" />
-        <h1 class="name">Serhii Yehorov</h1>
-        <h3><a class="link" href="./hire-me.html">Hire me</a> <br /></h3>
+        <div class="header mb-10">
+          <article class="position-container">
+            <h1 class="name bottom-border__green">Serhii Yehorov</h1>
+            <p class="position bottom-border__green">
+              Junior Frontend Developer
+            </p>
+            <h3><a class="link" href="./hire-me.html">Hire me</a> <br /></h3>
+          </article>
 
-        <img
-          class="photo"
-          src="./img/my_photo.jpg"
-          alt="Serhii Yehorov photo"
-        />
-      </header>
-      <main>
-        <p class="position">Junior Frontend Developer</p>
+          <aside class="photo-container">
+            <img
+              class="photo"
+              src="./img/my_photo.jpg"
+              alt="Serhii Yehorov photo"
+            />
+          </aside>
+        </div>
 
         <article>
           <h4>About me</h4>
@@ -33,85 +38,93 @@
             Being passionate about frontend development I have a great desire
             <br />
             to work and grow as a junior frontend developer. My recent works are
-            on Github.
+            on <a class="link" href="https://github.com/Kicum">Github</a>.
           </p>
         </article>
+      </header>
 
+      <main class="main-content">
         <article>
-          <h2>Work experience</h2>
-          <table
-            class="table-cell"
-            border="1"
-            cellspacing="0"
-            cellpadding="10px"
-          >
-            <thead>
-              <tr>
-                <th class="uppercase">Period</th>
-                <th class="uppercase">Position</th>
-              </tr>
-            </thead>
+          <h2 class="mb-10">Work experience</h2>
+          <div class="exp-table">
+            <table
+              class="table-cell"
+              border="1"
+              cellspacing="0"
+              cellpadding="10px"
+            >
+              <thead>
+                <tr>
+                  <th class="uppercase">Period</th>
+                  <th class="uppercase">Position</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr>
-                <td>May 2022 - Now</td>
-                <td>
-                  Frontend Learner at
-                  <a
-                    class="link"
-                    href="https://robotdreams.cc/uk/course/it-generation"
-                    target="_blank"
-                  >
-                    robot_dreams
-                  </a>
-                </td>
-              </tr>
+              <tbody>
+                <tr>
+                  <td>May 2022 - Now</td>
+                  <td>
+                    Frontend Learner at
+                    <a
+                      class="link"
+                      href="https://robotdreams.cc/uk/course/it-generation"
+                      target="_blank"
+                    >
+                      robot_dreams
+                    </a>
+                  </td>
+                </tr>
 
-              <tr>
-                <td class="uppercase" rowspan="2">
-                  <p>Description</p>
-                </td>
-                <td>Study HTML, CSS, JavaScript,</td>
-              </tr>
+                <tr>
+                  <td class="uppercase" rowspan="2">
+                    <p>Description</p>
+                  </td>
+                  <td>Study HTML, CSS, JavaScript,</td>
+                </tr>
 
-              <tr>
-                <td>React.JS, Angular.JS</td>
-              </tr>
+                <tr>
+                  <td>React.JS, Angular.JS</td>
+                </tr>
 
-              <tr>
-                <td>Nov 2019 — May 2022</td>
-                <td>
-                  Lead Sales Manager at
-                  <a class="link" href="https://vagar.com.ua/" target="_blank">
-                    LLC ODESSA WEIGHING FACTORY VAGAR
-                  </a>
-                </td>
-              </tr>
+                <tr>
+                  <td>Nov 2019 — May 2022</td>
+                  <td>
+                    Lead Sales Manager at
+                    <a
+                      class="link"
+                      href="https://vagar.com.ua/"
+                      target="_blank"
+                    >
+                      LLC ODESSA WEIGHING FACTORY VAGAR
+                    </a>
+                  </td>
+                </tr>
 
-              <tr>
-                <td class="uppercase" rowspan="3">
-                  <p>Description</p>
-                </td>
-                <td>
-                  I was in charge of providing communication with large mash
-                  companies (Silpo, Varus etc),
-                </td>
-              </tr>
+                <tr>
+                  <td class="uppercase" rowspan="3">
+                    <p>Description</p>
+                  </td>
+                  <td>
+                    I was in charge of providing communication with large mash
+                    companies (Silpo, Varus etc),
+                  </td>
+                </tr>
 
-              <tr>
-                <td>taking part in tenders purchases.</td>
-              </tr>
+                <tr>
+                  <td>taking part in tenders purchases.</td>
+                </tr>
 
-              <tr>
-                <td>Promoted from sales manager to lead sales manager.</td>
-              </tr>
-            </tbody>
-          </table>
+                <tr>
+                  <td>Promoted from sales manager to lead sales manager.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </article>
 
-        <article class="article">
-          <h2>Skills:</h2>
-          <ul class="square-type-list">
+        <article class="bottom-border__green">
+          <h2 class="mb-10">Skills:</h2>
+          <ul class="square-type-list pb-10">
             <li>CSS</li>
             <li>HTML/HTML5</li>
             <li>JavaScript</li>
@@ -119,9 +132,9 @@
           </ul>
         </article>
 
-        <article class="article">
-          <h2>Achievements:</h2>
-          <ol>
+        <article class="bottom-border__green">
+          <h2 class="mb-10">Achievements:</h2>
+          <ol class="pb-10">
             <li>Self-taught html and css</li>
             <li>Have Github account with several educational projects</li>
             <li>Got into IT Generation program</li>
