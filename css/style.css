@@ -12,7 +12,7 @@
 }
 
 .aside {
-  width: 30%;
+  width: 33%;
   background-color: #86a3b4;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@
 }
 
 .border {
-  width: 289px;
+  width: 259px;
   height: 6px;
   background-color: #1e1e1e;
 }
@@ -104,6 +104,7 @@
 }
 
 .main {
+  min-width: 700px;
   padding: 58px 55px;
   display: flex;
   flex-direction: column;
@@ -125,7 +126,7 @@
 }
 
 .main__border {
-  width: 660px;
+  width: 730px;
   height: 6px;
   background-color: #1e1e1e;
 }
@@ -153,4 +154,15 @@
 
 .position__text {
   font-weight: 400;
+}
+
+.education__title {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.education__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
 }
