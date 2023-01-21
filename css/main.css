@@ -140,15 +140,14 @@ td {
   right: 12px;
 }
 
-.link {
-  cursor: pointer;
+.link__bold {
+  margin-top: 20px;
   border: 1px solid transparent;
   border-radius: 6px;
-  padding: 4px 16px;
+  padding: 12px 16px;
   background-color: #0048d9;
   color: #fff;
   text-decoration: none;
-  margin-top: 5px;
 }
 
 .link:hover,
@@ -160,11 +159,13 @@ td {
   margin-top: 40px;
 }
 
-.link__bold {
+.link {
+  cursor: pointer;
   border: 1px solid transparent;
   border-radius: 6px;
-  padding: 12px 16px;
+  padding: 4px 16px;
   background-color: #0048d9;
   color: #fff;
   text-decoration: none;
+  margin-top: 5px;
 }
