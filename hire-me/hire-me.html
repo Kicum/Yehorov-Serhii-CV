@@ -6,56 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hire me</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
-      <h1>Hire me</h1>
-      <h3>Contact information</h3>
+      <div class="header">
+        <h1>Hire me</h1>
+        <h3>Contact information</h3>
+      </div>
 
-      <table border="1" cellspacing="0" cellpadding="10px">
-        <tbody>
-          <tr>
-            <td><strong>Phone</strong></td>
-            <td><a class="link" href="tel: +380630554529">+380630554529</a></td>
-          </tr>
+      <div class="main">
+        <table class="contact">
+          <tbody>
+            <tr>
+              <td><strong>Phone</strong></td>
+              <td>
+                <a href="tel: +380630554529">+380630554529</a>
+              </td>
+            </tr>
 
-          <tr>
-            <td><strong>Address</strong></td>
-            <td>Ukraine, c. Brovary, V. Chornovola str., b. 2a</td>
-          </tr>
-        </tbody>
-      </table>
+            <tr>
+              <td><strong>Address</strong></td>
+              <td>Ukraine, c. Brovary, V. Chornovola str., b. 2a</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <form action="#" style="margin-top: 5px">
-        <fieldset style="width: 600px">
-          <legend>Contact form</legend>
-          <div style="display: flex; gap: 53px">
-            <label for="email">E-mail<span style="color: red">*</span>:</label>
-            <input type="email" id="email" required />
-          </div>
+        <form class="reg-form" action="#">
+          <fieldset class="fieldset__style">
+            <legend>Contact form</legend>
 
-          <div style="display: flex; gap: 30px; margin-top: 5px">
-            <label for="description">Description:</label>
-            <textarea
-              name="description"
-              id="description"
-              cols="21"
-              rows="10"
-            ></textarea>
-          </div>
+            <div class="email">
+              <label class="label" for="email">
+                E-mail <span class="req">*</span>
+              </label>
+              <input class="email-input" type="email" id="email" required />
+              <p class="error">please insert your email</p>
+              <p class="success">everything is fine</p>
+            </div>
 
-          <div style="display: flex; gap: 37px; margin-top: 5px">
-            <label for="work-type"> Work type:</label>
-            <select name="work-type" id="work-type">
-              <option value="office">Office work</option>
-              <option value="remote">Remote work</option>
-              <option value="project">Project work</option>
-            </select>
-          </div>
-          <input type="submit" value="Hire me" style="margin-top: 5px" />
-        </fieldset>
-      </form>
-      <a class="link" href="./index.html">Back to CV</a>
+            <div class="description">
+              <label class="label" for="description">Description</label>
+              <textarea
+                class="textarea"
+                name="description"
+                id="description"
+              ></textarea>
+            </div>
+
+            <div class="select">
+              <label class="label" for="work-type"> Work type</label>
+              <div class="select-wrapper">
+                <select class="select-style" name="work-type" id="work-type">
+                  <option value="office">Office work</option>
+                  <option value="remote">Remote work</option>
+                  <option value="project">Project work</option>
+                </select>
+                <img
+                  class="select-svg"
+                  src="../img/Vector.svg"
+                  alt="triangle"
+                />
+              </div>
+            </div>
+            <input class="link" type="submit" value="Hire me" />
+          </fieldset>
+        </form>
+        <div class="backward">
+          <a class="link__bold" href="../index.html">Back to CV</a>
+        </div>
+      </div>
     </div>
     <br />
   </body>

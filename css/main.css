@@ -2,10 +2,169 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .container {
   margin: 0 auto;
   padding: 20px;
   width: 1024px;
   color: #333;
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact,
+td {
+  border-collapse: collapse;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.reg-form {
+  margin-top: 40px;
+}
+
+.fieldset__style {
+  width: 600px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+.req {
+  color: #ed0131;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.email-input {
+  color: #3b4256;
+  font-size: 16px;
+  line-height: 23px;
+  width: 460px;
+  background-color: #f8fafc;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 12px;
+}
+
+.email-input:valid {
+  border: 1px solid #0e6245;
+}
+
+.email-input:invalid {
+  border: 1px solid #ed0131;
+}
+
+.email-input:active {
+  border: 1px solid #0048d9;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.textarea {
+  resize: none;
+  padding: 12px;
+  width: 460px;
+  height: 140px;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+  color: #3b4256;
+  border: none;
+  background-color: #f8fafc;
+  border-radius: 4px;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.select option:not(:checked) {
+  color: #b8bcca;
+}
+
+.select option:checked {
+  color: #3b4256;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.01em;
+  color: #6f7482;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 460px;
+}
+
+.select-style {
+  border-radius: 4px;
+  color: #3b4256;
+  width: 460px;
+  cursor: pointer;
+  padding: 12px 25px 12px 12px;
+  appearance: none;
+  background-color: #f8fafc;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.select-svg {
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  right: 12px;
+}
+
+.link {
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 16px;
+  background-color: #0048d9;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.link:hover,
+.link__bold:hover {
+  background-color: #002266;
+}
+
+.backward {
+  margin-top: 40px;
+}
+
+.link__bold {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 12px 16px;
+  background-color: #0048d9;
+  color: #fff;
+  text-decoration: none;
 }
