@@ -14,8 +14,6 @@
 .aside {
   width: 33%;
   background-color: #86a3b4;
-  display: flex;
-  flex-direction: column;
   gap: 36px;
 }
 
@@ -24,17 +22,31 @@
   padding-left: 40px;
 }
 
-.name__style {
-  font-weight: 600;
+.title {
   font-size: 40px;
   line-height: 48px;
+}
+
+.hire-me__link {
+  width: 120px;
+  text-decoration: none;
+  background-color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 50px;
+  padding-left: 30px;
+}
+
+.hire-me__link:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.white {
   color: #ffffff;
 }
 
-.surname__style {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
+.blue {
   color: #1c2e8c;
 }
 
@@ -43,18 +55,10 @@
 }
 
 .contact,
-.languages {
-  display: flex;
-  flex-direction: column;
+.languages,
+.hire-me {
   padding-left: 40px;
   gap: 35px;
-}
-
-.contact__header,
-.languages__header {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
 .aside__header {
@@ -68,37 +72,24 @@
   background-color: #1e1e1e;
 }
 
-.address,
-.phone,
-.e-mail,
-.linked {
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
-}
-
 .contact__title {
   font-size: 24px;
   line-height: 29px;
 }
 
-.contact__text {
-  font-size: 16px;
-  line-height: 19px;
+.gap-11 {
+  gap: 11px;
 }
 
-.languages {
+.gap-15 {
   gap: 15px;
 }
 
-.languages_text {
+.languages__text {
   padding-top: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
-.languages__style {
+.languages__title {
   font-size: 20px;
   line-height: 24px;
 }
@@ -106,17 +97,10 @@
 .main {
   min-width: 700px;
   padding: 58px 55px;
-  display: flex;
-  flex-direction: column;
   gap: 50px;
 }
 
-.summary,
-.skills,
-.work,
-.education {
-  display: flex;
-  flex-direction: column;
+.gap-28 {
   gap: 28px;
 }
 
@@ -131,20 +115,8 @@
   background-color: #1e1e1e;
 }
 
-.summary__text {
-  font-size: 16px;
-  line-height: 19px;
-}
-
 .skills__list {
   padding-left: 28px;
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.position {
-  display: flex;
-  flex-direction: column;
 }
 
 .position__title {
@@ -152,17 +124,16 @@
   line-height: 17px;
 }
 
-.position__text {
-  font-weight: 400;
-}
-
-.education__title {
+.text {
   font-size: 16px;
   line-height: 19px;
 }
 
-.education__text {
+.font-normal {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
