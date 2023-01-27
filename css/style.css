@@ -9,12 +9,16 @@
   width: 1200px;
   min-height: 1600px;
   margin: 0 auto;
+  position: relative;
 }
 
 .aside {
+  position: fixed;
   width: 33%;
   background-color: #86a3b4;
   gap: 36px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .name {
@@ -95,6 +99,7 @@
 }
 
 .main {
+  margin-left: 40%;
   min-width: 700px;
   padding: 58px 55px;
   gap: 50px;
