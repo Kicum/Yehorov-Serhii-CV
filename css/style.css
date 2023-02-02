@@ -185,6 +185,10 @@
   line-height: var(--line-height-xs);
 }
 
+.link-darkblue {
+  color: var(--link-color-darkblue);
+}
+
 .font-normal {
   font-weight: var(--fw-normal);
 }
