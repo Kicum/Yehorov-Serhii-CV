@@ -7,5 +7,6 @@
   --bgcolor-hireme-link-secondary: #000;
   --color-hireme-link-secondary: rgb(230, 16, 16);
   --color-blue: #0f9c1d;
-  --link-color-darkblue: #051044;
+  --aside-link: #051044;
+  --aside-link-hover: #343a57;
 }

@@ -185,8 +185,13 @@
   line-height: var(--line-height-xs);
 }
 
-.link-darkblue {
-  color: var(--link-color-darkblue);
+.aside__link {
+  color: var(--aside-link);
+}
+
+.aside__link:hover {
+  color: var(--aside-link-hover);
+  transition: 0.25s;
 }
 
 .font-normal {
