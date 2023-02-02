@@ -187,6 +187,7 @@
 
 .aside__link {
   color: var(--aside-link);
+  text-decoration: none;
 }
 
 .aside__link:hover {
