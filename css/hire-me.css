@@ -16,6 +16,7 @@
   font-family: "IBM Plex Sans", sans-serif;
   font-family: "Inter", sans-serif;
   position: relative;
+  animation: zoomOut 2s linear;
 }
 
 .header {
@@ -180,4 +181,23 @@ td {
   color: #fff;
   text-decoration: none;
   margin-top: 5px;
+}
+
+@keyframes zoomOut {
+  0% {
+  transform: scale(2);
+  opacity: 0;
+  background-color: #a8a4a5;
+  }
+
+  50%{
+    transform: scale(1.5);
+    opacity: 0.5;
+    background-color: #dad6d7;
+  }
+
+  100% {
+  transform: scale(1);
+  opacity: 1;
+  }
 }
