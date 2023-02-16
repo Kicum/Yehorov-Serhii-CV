@@ -1,0 +1,276 @@
+  // fore choozing theme comment one of them
+
+//  @import './_main-theme';
+  @import './_my-theme';
+
+  $fw-bold: 600;
+  $fw-normal: 400;
+
+  $font-size-xxs: 14px;
+  $font-size-xs: 16px;
+  $font-size-sm: 20px;
+  $font-size-md: 24px;
+  $font-size-lg: 32px;
+  $font-size-xl: 36px;
+  $font-size-xxl: 40px;
+
+  $line-height-xxs: 17px;
+  $line-height-xs: 19px;
+  $line-height-sm: 24px;
+  $line-height-md: 29px;
+  $line-height-lg: 39px;
+  $line-height-xl: 44px;
+  $line-height-xxl: 48px;
+
+  $gap-xs: 11px;
+  $gap-sm: 15px;
+  $gap-md: 28px;
+  $gap-lg: 36px;
+  $gap-xl: 50px;
+
+  $padding-40: 40px;
+
+  @mixin durationTimeAside ($duration1) {
+    animation: slideUp $duration1 linear;
+  }
+
+  @mixin durationTimeMain ($duration2) {
+    animation: slideUp $duration2 linear;
+  }
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: "Inter", sans-serif;
+  font-weight: $fw-bold;
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.aside {
+  width: 100vw;
+  background-color: $bgcolor-aside-primary;
+  gap: $gap-lg;
+  padding-bottom: 20px;
+  @include durationTimeAside(2s);
+
+  &__header {
+    padding-top: 20px;
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+}
+
+.name {
+  padding-top: 60px;
+  padding-left: $padding-40;
+}
+
+.title {
+  font-size: $font-size-xxl;
+  line-height: $line-height-xxl;
+}
+
+.hire-me {
+  margin: 0 auto;
+
+  &__link {
+    margin: 20px auto;
+    text-decoration: none;
+    background-color: $bgcolor-hireme-link-primary;
+    color: $color-hireme-link-primary;
+    padding: 10px;
+    border-radius: 5px;
+
+      &:hover {
+        color: $color-hireme-link-secondary;
+        background-color: $bgcolor-hireme-link-secondary;
+      }
+  }
+}
+
+.white {
+  color: $color-hireme-link-primary;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.photo__style {
+  max-width: 100%;
+}
+
+.contact {
+  width: 100vw;
+}
+
+.contact,
+.languages {
+  padding-left: $padding-40;
+  gap: $gap-lg;
+}
+
+
+.border {
+  width: calc(100vw - 90px);
+  padding: 0 20px;
+  height: 6px;
+  background-color: $bgcolor-border-main;
+}
+
+.contact__title {
+  font-size: $font-size-md;
+  line-height: $line-height-md;
+}
+
+.linked {
+  overflow-wrap: break-word;
+}
+
+.gap-11 {
+  gap: $gap-xs;
+}
+
+.gap-15 {
+  gap: $gap-sm;
+}
+
+.languages__text {
+  padding-top: 8px;
+}
+
+.languages__title {
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+}
+
+.main {
+  background-color: $bgcolor-main-primary;
+  max-width: 100vw;
+  padding: 58px 55px;
+  gap: $gap-xl;
+  @include durationTimeMain(2.5s);
+}
+
+.gap-28 {
+  gap: $gap-md;
+}
+
+.main__title {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+}
+
+.main__border {
+  max-width: 100vw;
+  height: 6px;
+  background-color: $bgcolor-border-main;
+}
+
+.skills__list {
+  padding-left: 28px;
+}
+
+.position__opacity {
+  opacity: 0.7;
+}
+
+.position__opacity:first-child,
+.position__opacity:hover {
+  opacity: 1;
+}
+
+.position__opacity:hover {
+  transition: 0.5s;
+}
+
+.position__title {
+  font-size: $font-size-xxs;
+  line-height: $line-height-xxs;
+}
+
+.text {
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
+}
+
+.aside__link {
+  color: $aside-link;
+  text-decoration: none;
+}
+
+.aside__link:hover {
+  color: $aside-link-hover;
+  transition: 0.25s;
+}
+
+.font-normal {
+  font-weight: $fw-normal;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1023px) {
+  .container {
+    min-height: 1600px;
+    width: 1200px;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .aside {
+    width: 33%;
+    box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+  }
+
+  .photo__style:hover {
+    filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
+    transform: translate(60px, 0) scale(1.3);
+    transition: transform 1s;
+  }
+
+  .contact,
+  .languages {
+    width: 90%;
+  }
+
+  .main {
+    width: 67%;
+  }
+
+  .border {
+    width: 100%;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(400px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+}
+
+// @keyframes fadeIn {
+//   0% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }
